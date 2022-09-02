@@ -7,6 +7,7 @@ public class Ex5 {
         Integer minutes = 60;
         Integer seconds = 60;
         Integer secondsInYear = days * hours * minutes * seconds;
-        System.out.println("Aastas on " + (secondsInYear) + "sekundit");
+        Integer secondsInTenYear = secondsInYear * 10;
+        System.out.println("Aastas on " + (secondsInYear) + " " + "sekundit ja kümnes aastas on " + secondsInTenYear + " " + "sekundit");
     }
 }
