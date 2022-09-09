@@ -4,19 +4,29 @@ public class NumberStatistics {
 
     public class NumberStatistics {
         private int amountOfNumbers;
+        private int sum;
 
         public NumberStatistics() {
             this.amountOfNumbers = 0;
-            // initialize here the object variable amountOfNumbers
+            this.sum = 0;
         }
 
         public void addNumber(int number) {
-            // code here
+            this.sum() +=number;
+            this.amountOfNumbers++;
         }
 
         public int amountOfNumbers() {
             // code here
             return this.amountOfNumbers;
+        }
+
+        public int sum() {
+            return this.sum;
+        }
+
+        public double average() {
+            return (double)this.sum() PUUDU
         }
     }
 
