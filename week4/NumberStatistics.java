@@ -1,30 +1,33 @@
 package week4;
 
-import java.util.Scanner;
+public class NumberStatistics {
+    private int amountOfNumbers;
+    private int sum;
 
-public class Ex79 {
-    public static void main(String[] args) {
-        NumberStatistics all = new NumberStatistics();
-        NumberStatistics even = new NumberStatistics();
-        NumberStatistics odd = new NumberStatistics();
+    public NumberStatistics() {
+        // initialize here the object variable amountOfNumbers
+        this.amountOfNumbers = 0;
+        this.sum = 0;
+    }
 
-        System.out.println("Type number: ");
-        Scanner reader = new Scanner(System.in);
-        int number;
-        while (true) {
-            number = Integer.parseInt(reader.nextLine());
-            if (number == -1) {
-                break;
-            }
-            all.addNumber(number);
-            if(number % 2 == 0){
-                even.addNumber(number);
-            } else {
-                odd.addNumber(number);
-            }
-        }
-        System.out.println("sum: " + all.sum());
-        System.out.println("sum of even: " + even.sum());
-        System.out.println("sum of odd: " + odd.sum());
+    public void addNumber(int number) {
+        // code here
+        this.sum += number;
+        this.amountOfNumbers++;
+    }
+
+    public int amountOfNumbers() {
+        // code here
+        return this.amountOfNumbers;
+    }
+
+    public int sum() {
+        // code here
+        return this.sum;
+    }
+
+    public double average() {
+        // code here
+        return (double)this.sum / this.amountOfNumbers;
     }
 }
