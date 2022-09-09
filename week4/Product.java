@@ -6,6 +6,13 @@ public class Product {
     private int amount;
     private String name;
 
+    public double getPrice() {
+        return this.price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
     public Product(String name, double price, int amount) {
         this.price = price;
