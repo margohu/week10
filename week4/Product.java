@@ -1,18 +1,10 @@
 package week4;
 
 public class Product {
-    //price, amount and name
+    // price, amount and name
     private double price;
     private int amount;
     private String name;
-
-    public double getPrice() {
-        return this.price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
     public Product(String name, double price, int amount) {
         this.price = price;
@@ -21,7 +13,6 @@ public class Product {
     }
 
     public void printProduct(){
-        System.out.println(this.name + ", price" + this.price + "amount,  " + this.amount)
+        System.out.println(this.name + ", price " + this.price + ", amount " + this.amount);
     }
-
 }

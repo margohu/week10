@@ -1,31 +1,32 @@
 package week4;
 
-public class Ex72 {
-    public static void main(String[] args) {
-        Account a = new Account("A", 100);
-        Account b = new Account("B", 0);
-        Account c = new Account("C", 0);
+    public class Ex72 {
+        public static void main(String[] args) {
+            Account a = new Account("A", 100);
+            Account b = new Account("B", 0);
+            Account c = new Account("C", 0);
 
-        system.out.println(a);
-        system.out.println(b);
-        system.out.println(c);
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
 
-        transfer(a, b, 50);
+            transfer(a, b, 50);
 
-        system.out.println(a);
-        system.out.println(b);
-        system.out.println(c);
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
 
-        transfer(b, c, 25);
+            transfer(b, c, 25);
 
-        system.out.println(a);
-        system.out.println(b);
-        system.out.println(c);
-    }
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+        }
 
-    public static void transfer(Account from, Account to, double amount){
-        from.withdrawal(amount);
-        to.deposit(amount);
+        public static void transfer(Account from, Account to, double amount){
+            from.withdrawal(amount);
+            to.deposit(amount);
+        }
     }
 
 
@@ -45,7 +46,7 @@ public class Ex72 {
     //       myAccount.deposit(100.0);
 //        System.out.println(myAccount);
 
-}
+
 
 
 
@@ -67,6 +68,4 @@ public class Ex72 {
 //        System.out.println("Final state");
 //        System.out.println(bartosAccount);
 //        System.out.println(bartosSwissAccount);
-    }
-            }
 

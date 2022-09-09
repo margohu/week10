@@ -1,11 +1,6 @@
 package week4;
 
-/*
- * DO NOT TOUCH THIS !
- */
-
 public class Account {
-
     private double balance;
     private String owner;
 
@@ -30,8 +25,5 @@ public class Account {
     public String toString() {
         return this.owner + " balance: " + this.balance;
     }
-}
-
-
 }
 

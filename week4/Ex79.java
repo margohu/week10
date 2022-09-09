@@ -2,7 +2,7 @@ package week4;
 
 import java.util.Scanner;
 
-public class Ex79 {
+    public class Ex79 {
         public static void main(String[] args) {
             NumberStatistics all = new NumberStatistics();
             NumberStatistics even = new NumberStatistics();
@@ -22,12 +22,9 @@ public class Ex79 {
                 } else {
                     odd.addNumber(number);
                 }
-
-                System.out.println("Sum" + all.sum());
-                System.out.println("Sum of even" + even.sum());
-                System.out.println("Sum of odd" + odd.sum());
+            }
+            System.out.println("sum: " + all.sum());
+            System.out.println("sum of even: " + even.sum());
+            System.out.println("sum of odd: " + odd.sum());
         }
     }
-
-
-}
