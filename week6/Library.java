@@ -23,12 +23,9 @@ public class Library {
         ArrayList<Book> found = new ArrayList<Book>();
 
         for (Book book: this.books) {
-            if(book.title().contains(title)){
-                found.add(book);
+            if(StringUtils.included(book.title(), title)) {
+            found.add(book);
             }
-
-
-
         }
 
         return found;
@@ -39,16 +36,11 @@ public class Library {
         ArrayList<Book> found = new ArrayList<Book>();
 
         for (Book book: this.books) {
-            if(book.publisher().contains(publisher.trim())){
+            if(StringUtils.included(book.publisher(), publisher)){
                 found.add(book);
             }
-
-
-
         }
-
         return found;
-
     }
 
     public ArrayList<Book> searchByYear(int year) {
@@ -58,14 +50,7 @@ public class Library {
             if(book.year() == year){
                 found.add(book);
             }
-
-
-
         }
-
         return found;
-
     }
-
-
 }
