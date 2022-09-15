@@ -11,7 +11,17 @@ public class Ex101 {
         Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
 
         ArrayList<Book> result = Library.searchByTitle("Cheese");
-        for (Book book: result) {
+        for (Book book : result) {
+            System.out.println(book);
+        }
+
+        System.out.println("---");
+        for (Book book : Library.searchByPublisher("Penguin Group  ")) {
+            System.out.println(book);
+        }
+
+        System.out.println("---");
+        for (Book book : Library.searchByYear(1851)) {
             System.out.println(book);
         }
     }
