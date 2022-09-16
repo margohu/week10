@@ -1,22 +1,14 @@
 package week7;
 
 public class Ex4 {
-    public static void main(String[] args) {
-        Thing book = new Thing("Happiness in Three Steps", 2);
-        Thing mobile = new Thing("Nokia 3210", 1);
-        Thing brick = new Thing("Brick", 4);
+        public static void main (String[]Container){
+            Container container = new Container(1000);
+            addSuitcasesFullOfBricks(container);
+            System.out.println(container);
+        }
 
-        Suitcase tomsCase = new Suitcase(10);
-        tomsCase.addThing(book);
-        tomsCase.addThing(mobile);
-
-        Suitcase georgesCase = new Suitcase(10);
-        georgesCase.addThing(brick);
-
-        Container container = new Container(1000);
-        container.addSuitcase(tomsCase);
-        container.addSuitcase(georgesCase);
-
-        System.out.println(container);
+        public static void addSuitcasesFullOfBricks (Container container){
+            // adding 100 suitcases with one brick in each
+        }
     }
 }
