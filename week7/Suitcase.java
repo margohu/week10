@@ -24,7 +24,8 @@ public class Suitcase {
         if(weightCurrent == 0) {
             return "empty (" + weightCurrent + " kg)";
         }
-        return this.things.size() + " things (" + weightCurrent + " kg)";
+        String languageControl = (this.things.size()>1) ? " things" : " thing";
+        return this.things.size() + languageControl + " (" + weightCurrent + " kg)";
     }
 
     public void printThings(){
