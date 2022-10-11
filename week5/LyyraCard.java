@@ -15,7 +15,6 @@ public class LyyraCard {
     public void loadMoney(double amount) {
         this.balance += amount;
     }
-
     public boolean pay(double amount) {
         if (this.balance>= amount){
             this.balance-= amount;
