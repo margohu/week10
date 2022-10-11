@@ -19,6 +19,7 @@ import java.util.Scanner;
             System.out.print("Type in your text: ");
             String text = reader.nextLine();
             System.out.println("In reverse order: " + reverse(text));
+            System.out.println("In normal and reverse order: " + (text) + " " + reverse(text));
             reverse(text);
         }
 
