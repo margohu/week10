@@ -1,5 +1,7 @@
 package library.ui;
 
+import week9.library.ui.UserInterface;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +10,6 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         UserInterface userInterface = new UserInterface(reader);
 
-        userInterface.printTitle(); // it works!
+
     }
 }

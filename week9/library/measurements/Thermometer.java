@@ -1,5 +1,6 @@
 package week9.library.measurements;
 
+import java.util.Random;
 public class Thermometer implements Sensor{
     private boolean isOn;
     @Override
