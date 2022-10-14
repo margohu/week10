@@ -1,5 +1,4 @@
 package week10;
-
 public class buy {
     public static void main(String[] args) {
         Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White");
@@ -8,11 +7,9 @@ public class buy {
         hamburger.addHamburgerAddition3("Cheese", 1.13);
         System.out.println("Total Burger price is " + hamburger.itemizeHamburger());
 
-
         DeluxBurger db = new DeluxBurger();
         db.addHamburgerAddition3("Should not do this", 50.53);
         System.out.println("Total Deluxe Burger price is " + db.itemizeHamburger());
-
 
         HealthyBurger hb = new HealthyBurger("Bacon", 5.67);
         hb.addHamburgerAddition1("Egg", 5.43);

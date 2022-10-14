@@ -17,5 +17,6 @@ public class HealthyBurger extends Hamburger {
     public void addHealthyAddition2(String toppingName, double toppingPrice){
         this.healthyExtra2Name = toppingName;
         this.healthyExtra2Price = toppingPrice;
+
     }
 }
