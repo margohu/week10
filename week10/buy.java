@@ -18,8 +18,5 @@ public class buy {
         hb.addHamburgerAddition1("Egg", 5.43);
         hb.addHealthyAddition1("Lentils", 3.41);
         System.out.println("Total Healthy Burger price is  " + hb.itemizeHamburger());
-
-
     }
-
 }
